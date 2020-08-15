@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: right;
+    padding: 5px;
+}
+
+html {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+body {
+    background: #08161f
+}
+
+.header {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+    color: #93c121;
+    padding: 10 px;
+    //opacity: 0.5;
+    //background: #08161f
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    font-family: Agency FB, Geneva, sans-serif;
+    //display: inline-block;
+    margin-bottom: 1px;
+    padding: 2px 36px; /* espaço entre os items */
+    color: #93c121;
+    font-size: 30px;
+    /*text-decoration: none;*/
+}
+.menu li:hover {
+    //necessário desenhar linha debaixo da palavra
+}
+
+.content{
+    background-color: #93c121;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.aside {
+    background-color: #93c121;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: #08161f;
+    color: #93c121;
+    text-align: center;
+    font-size: 12px;
+    padding: 1px;
+}
+
+@font-face {
+    font-family: Agency FB;
+    src: url("http://uncutbeatz.com/clear/fonts/AGENCYR.TTF") format("truetype");
+    font-style:normal;
+}
+
+line {
+  stroke: #93c121;
+  stroke-width: 30;
+  position:absolute;
+  z-index:-1;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+/*
+verde #93c121 / rgb(147,193,33);
+azul esccuro  #08161f
+
+
+gradiente:
+    css: #grad1 {
+        height: 200px;
+        background-color: #ffffff;
+        background-image: linear-gradient(to right, #08161f, #ffffff);}
+    html: <div id="grad1"></div>
+
+SVG:
+    //ORI:background-image:  url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><linearGradient id='gradient'><stop offset='10%' stop-color='%23F00'/><stop offset='90%' stop-color='%23fcc'/> </linearGradient><rect fill='url(%23gradient)' x='0' y='0' width='100%' height='100%'/></svg>");
+    //ref: <svg class="background" width="100%" height="100%" xmlns="http://www.w3.org/1999/xlink"  preserveAspectRatio="xMidYMid" >    <line x1="0" y1="200" x2=100% y2="50" />
+
+bg image:
+    body {
+        background: #08161f
+        height: 100%;
+        background-image: url(../imgs/shape1.svg);
+        background-size:100% 100%;
+        -o-background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        background-size:cover;}
+
+transformations:
+    transform: rotate(20deg);
+    transform: scaleY(1.5);
+
+menu li:
+    float: left;
+    text-align: right;
+    background-color: #08161f;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+
+.menu li h1 {
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: right;
+}
+
+
+.active {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

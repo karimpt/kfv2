@@ -1,0 +1,168 @@
+/*esquema cores: HEX: #eaece5
+                 HEX: #b2c2bf
+                 HEX: #c0ded9
+                 HEX: #3b3a30/*
+
+/* aplicado a todo o body */
+body {
+    background-color: #eaece5;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    /*
+    margin: 0px;
+    max-width: 100%;
+    font-size: 100%;
+    */
+}
+
+/* aplicado a todo o documento */
+* {
+    /*box-sizing: border-box;*/
+}
+
+p{
+        color: yellow;
+        text-align: center;
+        font-size: 8pt;
+        margin: 10px;
+}
+
+
+h1{
+        color: black;
+        text-align: center
+        font-size: 5pt;
+        margin: 5px;
+}
+
+/* titulo article */
+h2{
+    color: #3b3a30;
+    text-align: left
+    font-size: 8pt;
+    margin: 30px;
+}
+
+/* texto article */
+h3{
+    color: #c0ded9;
+    text-align: left;
+    font-size: 8pt;
+    margin: 10px;
+}
+
+
+
+header h4 {
+    /*
+    color: #ffffff;
+    background-color: #000000;
+    box-shadow: 2px 2px 20px #888;
+    transform: rotate(-45deg);
+    position: absolute;
+    padding: 0px 30px;
+    top: 30px;
+    left: -40px;
+    text-align: center;
+    font-size: 0.6rem;
+    display: none;
+    */
+}
+
+section article header h2{
+    color: blue;
+    text-align: left
+    font-size: 8pt;
+    margin: 30px;
+}
+
+section article header h5{
+    color: green;
+    text-align: left
+    font-size: 8pt;
+    margin: 30px;
+}
+
+section article header p{
+    color: purple;
+    text-align: left
+    font-size: 8pt;
+    margin: 30px;
+}
+
+aside h2{
+            color: cyan;
+            text-align: left
+            font-size: 8pt;
+            margin: 30px;
+        }
+
+aside p{
+            color: grey;
+            text-align: left
+            font-size: 8pt;
+            margin: 30px;
+        }
+
+
+.footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: red;
+        color: white;
+        text-align: center;
+}
+
+/* alteração aos links */
+a {
+    text-decoration: none;
+}
+
+
+/* menu */
+nav a:hover {
+    /* color: white; */
+    /* background-color: #000000; */
+}
+
+
+nav ul {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul ul{
+    display: none;
+}
+
+nav ul li {
+    display:block;
+    float:left;
+    padding:3px 15px;
+}
+
+nav ul li a {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    transition: all .25s ease;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: #d0d0d0;
+    background-color: #b2c2bf
+}
+
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li:hover > ul { margin: 0px; padding: 0px;}
+nav ul li:hover > ul li { float: none; display: block;}
+nav ul li:hover > ul li a { color: #333333; min-width: 500px;}
+nav ul li:hover > ul li a:hover { color: #d0d0d0}
+
+nav ul li {position: relative;}
+nav ul li ul {position: absolute; top: 25px;  left: 0px;}
